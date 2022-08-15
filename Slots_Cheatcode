@@ -1,0 +1,14 @@
+input_tracker = []
+cheat_code = ['3', '3', '1', '1', '4', '4', '2', '5', '2', '5']
+while True:
+    Wager = input()
+    input_tracker.append(Wager)
+    if input_tracker == cheat_code:
+        print(True)
+    else:
+        check = len(input_tracker)-1
+        if input_tracker[check] != cheat_code[check]:
+            input_tracker = []
+        else:
+            continue
+
